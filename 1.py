@@ -1,1 +1,1 @@
-print(5*"AAA")
+print(5*"AAAапф")
