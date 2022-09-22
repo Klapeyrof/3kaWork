@@ -10,7 +10,7 @@ def func(a):
 try:
     while True:
         T=float(input())
-        t=T/256/2
+        t=(T/256)/2
         for j in range(256):
             GPIO.output(dac,func(j))
             time.sleep(t)
