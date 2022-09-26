@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+int main(){
+    cout << fixed;
+    cout.precision(2);
+    
+    unsigned int spis[32];
+    unsigned int s=1;
+    float t=10;
+    for(int i=0;i<32;i++){
+        cout<<t<<' ';
+        t*=10;
+        unsigned a=t;
+        for(int i=0;i<32;i++){
+            spis[i]=(a & s);
+            a>>=1;
+        }
+        for(int i=31;i>=0;i--){
+            cout<<spis[i];
+        }
+        cout<<endl;
+    }
+
+    return 0;
+}
