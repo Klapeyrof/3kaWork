@@ -2,3 +2,7 @@
 переключиться в новую ветку: git checkout surname
 добавить в репозиторий файл branch-how-to.md
 написать в новом файле пару строк о том, как пользоваться ветками 
+
+Чтобы создать ветку напиши:git branch username 
+Чтобы переключить ветку напиши: git checkout username
+чтобы отправить ветку на сервер напиши:git push --set-upstream origin Tol2
