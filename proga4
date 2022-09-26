@@ -4,13 +4,14 @@ using namespace std;
 
 int main(){
     //Ряд Виете
-    int pi=1,t2=0,t1=2;
-    for (int i; i<100;i++){
-        t=pow((t1+t2),0.5);
-        t=(t1+t2)**0.5;
+    cout << fixed;
+    cout.precision(30);
+    float pi=1,t2=0,t1=2;
+    float t;
+    for (int i=0; i<100;i++){
+        t=sqrt(t1+t2);
         pi=pi*t/2;
         t2=t;
-        cout<<pi;
+        cout<<(2*pow(pi,-1))<<endl;
     }
 }
-
