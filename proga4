@@ -1,12 +1,16 @@
-#Ряд Виете
-pi=1
-t2=0
-temp=0
-for i in range(100):
-    t1=2
-    t=(t1+t2)**0.5
-    pi=pi*t/2
-    t2=t
-    print(2*(pi)**(-1))
+#include <iostream>
+#include <cmath>
+using namespace std;
 
+int main(){
+    //Ряд Виете
+    int pi=1,t2=0,t1=2;
+    for (int i; i<100;i++){
+        t=pow((t1+t2),0.5);
+        t=(t1+t2)**0.5;
+        pi=pi*t/2;
+        t2=t;
+        cout<<pi;
+    }
+}
 
