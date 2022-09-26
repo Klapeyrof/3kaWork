@@ -2,10 +2,12 @@
 using namespace std;
 
 int main(){
+    cout << fixed;
+    cout.precision(2);
     float F=100000000000000000;
     while(F>=100000000000000000){
         F--;
-        cout<<F<<"Цикл бесконечен ";
+        cout<<F<<endl;
     }
     return 0;
 }
