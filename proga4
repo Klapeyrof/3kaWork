@@ -2,8 +2,9 @@
 #include <cmath>
 using namespace std;
 
+
+//Ряд Виете
 int main(){
-    //Ряд Виете
     cout << fixed;
     cout.precision(30);
     float pi=1,t2=0,t1=2;
@@ -15,3 +16,26 @@ int main(){
         cout<<(2*pow(pi,-1))<<endl;
     }
 }
+
+
+//Ряд Уоллиса
+int main(){
+    cout << fixed;
+    cout.precision(4);
+    float a=1,b=2,pi=2,k=0;
+    for (int i=0; i<500;i++){
+        pi=pi*b/a;
+        cout<<pi<<endl;
+        if(a<b){
+            a+=2;
+            k=1;
+        }
+        if(b<a and k==0){
+            b+=2;
+        }
+        k=0;
+    }
+}
+
+
+
