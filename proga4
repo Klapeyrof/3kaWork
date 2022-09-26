@@ -3,7 +3,7 @@
 using namespace std;
 
 
-//Ряд Виете
+//Ряд Виете (сходится снизу)
 int main(){
     cout << fixed;
     cout.precision(30);
@@ -18,7 +18,7 @@ int main(){
 }
 
 
-//Ряд Уоллиса
+//Ряд Уоллиса (колеблется)
 int main(){
     cout << fixed;
     cout.precision(4);
@@ -39,7 +39,7 @@ int main(){
 
 
 
-//Ряд Лейбница
+//Ряд Лейбница (сходится при больших итерациях)
 int main(){
     cout << fixed;
     cout.precision(10);
