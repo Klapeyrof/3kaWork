@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+union B{
+    unsigned int i;
+    float f;
+};
+
+int main(){
+    cout << fixed;
+    cout.precision(2);
+    unsigned int long t=10;
+    for(int i=0;i<22;i++){
+        cout<<t<<endl;
+        t*=10;
+    }
+
+    return 0;
+}
