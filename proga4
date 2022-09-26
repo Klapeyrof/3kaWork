@@ -25,7 +25,6 @@ int main(){
     float a=1,b=2,pi=2,k=0;
     for (int i=0; i<500;i++){
         pi=pi*b/a;
-        cout<<pi<<endl;
         if(a<b){
             a+=2;
             k=1;
@@ -34,8 +33,22 @@ int main(){
             b+=2;
         }
         k=0;
+        cout<<pi<<endl;
     }
 }
 
+
+
+//Ряд Лейбница
+int main(){
+    cout << fixed;
+    cout.precision(10);
+    float s = 1, pi = 0;
+    for(float i = 1; i <= 1000; i += 2){
+        pi = pi + s * (4 / i);
+        s = -s;
+        cout<<pi<<endl;
+    }
+}
 
 
