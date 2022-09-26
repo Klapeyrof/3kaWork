@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    float F=100000000000000000;
+    while(F>=100000000000000000){
+        F--;
+        cout<<F<<"Цикл бесконечен ";
+    }
+    return 0;
+}
