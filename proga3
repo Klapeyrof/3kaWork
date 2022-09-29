@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    cout << fixed;
+    cout.precision(2);
+    float F=16700000;
+    while(F<=100000000000000000000000){
+        F++;
+        cout<<F<<endl;
+    }
+    return 0;
+}

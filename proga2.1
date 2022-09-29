@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+union B{
+    unsigned int i;
+    float f;
+};
+
+int main(){
+    cout << fixed;
+    cout.precision(2);
+    
+    unsigned int spis[32];
+    B a;
+    B s;
+    s.i=1;
+    float t=10;
+    for(int i=0;i<32;i++){
+        cout<<t<<' ';
+        t*=10;
+        a.f=t;
+        for(int i=0;i<32;i++){
+            spis[i]=(a.i & s.i);
+            a.i>>=1;
+        }
+        for(int i=31;i>=0;i--){
+            cout<<spis[i];
+        }
+        cout<<endl;
+    }
+
+    return 0;
+}

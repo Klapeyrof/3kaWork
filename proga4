@@ -1,0 +1,54 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+
+//Ряд Виете (сходится снизу)
+int main(){
+    cout << fixed;
+    cout.precision(30);
+    float pi=1,t2=0,t1=2;
+    float t;
+    for (int i=0; i<100;i++){
+        t=sqrt(t1+t2);
+        pi=pi*t/2;
+        t2=t;
+        cout<<(2*pow(pi,-1))<<endl;
+    }
+}
+
+
+//Ряд Уоллиса (колеблется)
+int main(){
+    cout << fixed;
+    cout.precision(4);
+    float a=1,b=2,pi=2,k=0;
+    for (int i=0; i<500;i++){
+        pi=pi*b/a;
+        if(a<b){
+            a+=2;
+            k=1;
+        }
+        if(b<a and k==0){
+            b+=2;
+        }
+        k=0;
+        cout<<pi<<endl;
+    }
+}
+
+
+
+//Ряд Лейбница (сходится при больших итерациях)
+int main(){
+    cout << fixed;
+    cout.precision(10);
+    float s = 1, pi = 0;
+    for(float i = 1; i <= 10000; i += 2){
+        pi = pi + s * (4 / i);
+        s = -s;
+        cout<<pi<<endl;
+    }
+}
+
+
